@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1734864 */
+  src: url('//at.alicdn.com/t/font_1734864_hnsz6h8kmge.eot');
+  src: url('//at.alicdn.com/t/font_1734864_hnsz6h8kmge.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1734864_hnsz6h8kmge.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1734864_hnsz6h8kmge.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1734864_hnsz6h8kmge.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1734864_hnsz6h8kmge.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.1887rem  /* 20/106 */;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+  content: "\e628";
+}
+
+.icon-pause:before {
+  content: "\e606";
+}
+
+.icon-send:before {
+  content: "\e623";
+}
+
+.icon-message:before {
+  content: "\e61b";
+}
+
+.icon-weixin:before {
+  content: "\e63f";
+}
+
+.icon-weibo:before {
+  content: "\e619";
+}
+
+.icon-qq:before {
+  content: "\e6d8";
+}
+
+.icon-zone:before {
+  content: "\e603";
+}
+

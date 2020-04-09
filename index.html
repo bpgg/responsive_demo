@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" name="viewport">
+    <title>交易曦游记</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img class="logo-img" src="./img/logo.png" alt="">
+                <span class="logo-text">交易曦游记</span>
+            </div>
+            <div class="user">
+                <img class="user-img" src="./img/head.png" alt="">
+                <span class="user-text">欢迎，木板</span>
+            </div>
+        </div>
+        <div class="content">
+            <!-- banner start -->
+            <div class="banner-wrap">
+                <div class="banner">
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_1.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_2.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_3.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_4.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_5.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_6.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_7.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-item-img" src="./img/banner_8.png" alt="">
+                    </div>
+                    <div class="banner-item">
+                        每周三晚上20：00更新
+                    </div>
+                </div>
+            </div>
+            <!-- banner end -->
+
+            <!-- video start -->
+            <div class="video-wrap">
+                <div class="video-title">
+                    交易曦游记：记录真实交易员的人物纪实片
+                </div>
+                <div class="video-share-wrap">
+                    <span class="video-share-text">分享</span>
+                    <div class="video-share-list">
+                        <i onclick="shareTo('wechat')" class="iconfont icon-weixin"></i>
+                        <i onclick="shareTo('sina')" class="iconfont icon-weibo"></i>
+                        <i onclick="shareTo('qq')" class="iconfont icon-qq"></i>
+                        <i onclick="shareTo('qzone')" class="iconfont icon-zone"></i>
+                    </div>
+                </div>
+                <div class="video-content-wrap">
+
+                    <video class="video-content" id="video_play" src="http://gslb.miaopai.com/stream/c5CU~hZ3yg3FVPjjTSfD~Cm2TqqEnMa8.mp4?vend=miaopai&ssig=c3d09ef8687e3abc44ace52472eab6b3&time_stamp=1586114338286&mpflag=32&unique_id=1586110450910044" onended="endFunc()"></video>
+
+                    <div class="video-control-list" onclick="togglePlay">
+                        <span id="icon-play" class="video-play iconfont icon-play"></span>
+                        <span id="icon-plause" class="video-pause iconfont icon-pause"></span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- video end -->
+            <!-- review start -->
+            <div class="introduce-wrap">
+                <div class="introduce-people">
+                    <div class="introduce-people-title">交易员人物介绍</div>
+                    <div class="introduce-people-content">
+                        <div class="people-img-list">
+                            <div class="people-item" onclick="showIt(1)">
+                                <img class="people-item-img" src="./img/head.png" alt="">
+                                <div class="people-item-name">
+                                    <span>林则徐</span>
+                                    <span class="people-item-show"></span>
+                                    <span class="people-item-hide"></span>
+                                </div>
+                            </div>
+                            <div class="people-item" onclick="showIt(2)">
+                                <img class="people-item-img" src="./img/head.png" alt="">
+                                <div class="people-item-name">
+                                    <span>林则徐</span>
+                                    <span class="people-item-show"></span>
+                                    <span class="people-item-hide"></span>
+                                </div>
+                            </div>
+                            <div class="people-item" onclick="showIt(3)">
+                                <img class="people-item-img" src="./img/head.png" alt="">
+                                <div class="people-item-name">
+                                    <span>林则徐</span>
+                                    <span class="people-item-show"></span>
+                                    <span class="people-item-hide"></span>
+                                </div>
+                            </div>
+                            <div class="people-item" onclick="showIt(4)">
+                                <img class="people-item-img" src="./img/head.png" alt="">
+                                <div class="people-item-name">
+                                    <span>林则徐</span>
+                                    <span class="people-item-show"></span>
+                                    <span class="people-item-hide"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="people-text-pc">
+                            林则徐（1785年），福建<br/> 清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                        </div>
+                        <div class="people-text-mobile">
+                            <span class="people-text-one">
+                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                            </span>
+                            <span class="people-text-two">
+                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                            </span>
+                            <span class="people-text-three">
+                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                            </span>
+                            <span class="people-text-four">
+                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片,在中国有“民族英雄”之誉。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="introduce-topic">
+                    <div class="introduce-topic-title">本集话题讨论</div>
+                    <div class="introduce-topic-question">
+                        交易简单看来，不外乎上涨下跌，赌博不外乎输赢。交易员是赌徒吗？
+                    </div>
+                    <div class="introduce-topic-vote">
+                        <div class="introduce-topic-vote-item">
+                            <div class="vote-item-content">
+                                <img src="./img/left.png" alt="" class="vote-item-img">
+                                <div class="vote-item-button">投票</div>
+                                <div class="vote-item-text">我是选项1</div>
+                            </div>
+                            <div class="vote-item-result">已投 1209 票</div>
+                        </div>
+                        <div class="introduce-topic-vote-item">
+                            <div class="vote-item-content">
+                                <img src="./img/right.png" alt="" class="vote-item-img">
+                                <div class="vote-item-button">投票</div>
+                                <div class="vote-item-text">我是选项2</div>
+                            </div>
+                            <div class="vote-item-result">已投 1209 票</div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="introduce-activity"></div>
+            </div>
+            <!-- review end -->
+        </div>
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+        <script type="text/javascript" src="js/resetRem.js"></script>
+</body>
+
+</html>
